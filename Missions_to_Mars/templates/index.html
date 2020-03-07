@@ -23,8 +23,24 @@
 
     <div class="container">
       <h3>Latest Mars News</h3>
-      <h6>{{ mars_news_data.news_title }}</h6>
-      <p>{{ mars_news_data.news_paragraph }}</p>
+      <h6>{{ scrape_mars_news.news_title }}</h6>
+      <p>{{ scrape_mars_news.news_paragraph }}</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Featured Mars Image</h3>
+            <img src="{{ featured_image.featured_image_url }}" style="max-width:100%; max-height: auto;" alt="Mars Featured Image">
+        </div>
+
+        <div class="col-md4">
+            <h4>Mars Facts</h4>
+            <a href="{{ mars_facts.mars_table }}"></a>
+          </div>
+
+
+    </div>
   </div>
 
 
