@@ -73,3 +73,5 @@ def mars_facts():
 
     browser.quit()
     return mars_facts
+
+
